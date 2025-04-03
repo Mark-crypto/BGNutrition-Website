@@ -1,5 +1,25 @@
+// import Skeleton from "react-loading-skeleton";
+// import "react-loading-skeleton/dist/skeleton.css";
+// import { SkeletonTheme } from "react-loading-skeleton";
+
+const postMessage = {
+  name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+};
+
 const Home = () => {
-  return <div>Home</div>;
+  // #10172a
+  return (
+    <>
+      <h4 className="text-cyan-400">{postMessage.name}</h4>
+    </>
+  );
 };
 
 export default Home;
+
+{
+  /* <SkeletonTheme baseColor="#202020" highlightColor="#444">
+  {/* <Skeleton count={5} height={30} width={300} /> */
+}
+//<h4>{postMessage.name || <Skeleton />}</h4>
+//</SkeletonTheme>; */}

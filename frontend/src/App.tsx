@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Loading from "./components/Loading";
 import ErrorPage from "./components/ErrorPage";
 import Home from "./pages/Home";
+import "./App.css";
 
 const About = lazy(() => import("./pages/About"));
 
