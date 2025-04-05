@@ -2,6 +2,7 @@
 // import "react-loading-skeleton/dist/skeleton.css";
 // import { SkeletonTheme } from "react-loading-skeleton";
 
+import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
+      <Hero />
     </>
   );
 };
