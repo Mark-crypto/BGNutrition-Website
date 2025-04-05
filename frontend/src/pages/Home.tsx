@@ -2,15 +2,13 @@
 // import "react-loading-skeleton/dist/skeleton.css";
 // import { SkeletonTheme } from "react-loading-skeleton";
 
-const postMessage = {
-  name: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-};
+import Navbar from "@/components/Navbar";
 
 const Home = () => {
   // #10172a
   return (
     <>
-      <h4 className="text-cyan-400">{postMessage.name}</h4>
+      <Navbar />
     </>
   );
 };

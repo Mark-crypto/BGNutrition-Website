@@ -1,5 +1,7 @@
 body {
-  background-color: #10172a;
+  /* background-color: #10172a; */
+  margin: 0;
+  padding: 0;
 }
 .swiper {
   width: 100%;
