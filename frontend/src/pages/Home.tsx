@@ -3,7 +3,10 @@
 // import { SkeletonTheme } from "react-loading-skeleton";
 
 import Hero from "@/components/Hero";
+import Journey from "@/components/Journey";
+import MissionVision from "@/components/Mission";
 import Navbar from "@/components/Navbar";
+import Values from "@/components/Values";
 
 const Home = () => {
   // #10172a
@@ -11,6 +14,9 @@ const Home = () => {
     <>
       <Navbar />
       <Hero />
+      <MissionVision />
+      <Values />
+      <Journey />
     </>
   );
 };
