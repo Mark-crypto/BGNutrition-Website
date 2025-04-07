@@ -60,6 +60,38 @@ const cardData = [
   },
 ];
 
+const values = [
+  {
+    title: "Integrity",
+    text: "We will demonstrate the highest ethical standards in all interactions",
+    icon: "fa fa-handshake-o icon-value",
+  },
+  {
+    title: "Stewardship",
+    text: "We will be accountable to all through the efficient and environmentally responsible use of resources.",
+    icon: "fa fa-child icon-value",
+  },
+  {
+    title: "Teamwork",
+    text: "We will foster cooperation and a sense of empowerment amongst our diverse staff, volunteers, and community partners.",
+    icon: "fa fa-users icon-value",
+  },
+  {
+    title: "Innovation",
+    text: "We will continually seek to provide excellent service through the development of new and improved methods to reduce hunger and malnutrition.",
+    icon: "fa fa-lightbulb-o icon-value",
+  },
+  {
+    title: "Professionalism",
+    text: "We will maintain the highest standards and demonstrate collegiality and respect in all actions.",
+    icon: "fa fa-solid fa-medal icon-value",
+  },
+  {
+    title: "Respect",
+    text: "We will treat all of our relationships with respect.",
+    icon: "fa fa-smile-o icon-value",
+  },
+];
 const Values = () => {
   return (
     <div className="flex flex-col items-center gap-8 mb-16 px-4">

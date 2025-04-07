@@ -1,12 +1,5 @@
 const Navbar = () => {
-  const sections = [
-    "home",
-    "journey",
-    "achievements",
-    "projects",
-    "quotes",
-    "values",
-  ];
+  const sections = ["home", "journey", "projects", "links", "quotes", "footer"];
   return (
     <>
       <div className="flex justify-center items-center  dark:bg-gray-900 sticky top-0 z-10">
