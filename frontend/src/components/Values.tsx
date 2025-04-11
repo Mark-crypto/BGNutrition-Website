@@ -7,6 +7,14 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import {
+  HeartHandshake,
+  UsersRound,
+  Lightbulb,
+  Medal,
+  Smile,
+  Sun,
+} from "lucide-react";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -21,75 +29,53 @@ const cardVariants = {
   }),
 };
 
-const cardData = [
+const values = [
   {
     title: "Integrity",
     desc: "We do the right thing.",
-    content: "Content about integrity.",
-    footer: "Learn more",
+    content:
+      "We will demonstrate the highest ethical standards in all interactions",
+    icon: <HeartHandshake />,
+    footer: "",
+  },
+  {
+    title: "Stewardship",
+    desc: "We are open and transparent in all actions",
+    content:
+      "We will be accountable to all through the efficient and environmentally responsible use of resources.",
+    icon: <Sun />,
+    footer: "",
+  },
+  {
+    title: "Teamwork",
+    desc: "We work together.",
+    content:
+      "We will foster cooperation and a sense of empowerment amongst our diverse staff, volunteers, and community partners.",
+    icon: <UsersRound />,
+    footer: "",
   },
   {
     title: "Innovation",
     desc: "We think outside the box.",
-    content: "Content about innovation.",
-    footer: "Explore",
-  },
-  {
-    title: "Empathy",
-    desc: "We care deeply.",
-    content: "Content about empathy.",
-    footer: "Understand",
-  },
-  {
-    title: "Excellence",
-    desc: "We aim high.",
-    content: "Content about excellence.",
-    footer: "Pursue",
-  },
-  {
-    title: "Collaboration",
-    desc: "We work together.",
-    content: "Content about collaboration.",
-    footer: "Join us",
-  },
-  {
-    title: "Transparency",
-    desc: "We are open and honest.",
-    content: "Content about transparency.",
-    footer: "Trust",
-  },
-];
-
-const values = [
-  {
-    title: "Integrity",
-    text: "We will demonstrate the highest ethical standards in all interactions",
-    icon: "fa fa-handshake-o icon-value",
-  },
-  {
-    title: "Stewardship",
-    text: "We will be accountable to all through the efficient and environmentally responsible use of resources.",
-    icon: "fa fa-child icon-value",
-  },
-  {
-    title: "Teamwork",
-    text: "We will foster cooperation and a sense of empowerment amongst our diverse staff, volunteers, and community partners.",
-    icon: "fa fa-users icon-value",
-  },
-  {
-    title: "Innovation",
-    text: "We will continually seek to provide excellent service through the development of new and improved methods to reduce hunger and malnutrition.",
-    icon: "fa fa-lightbulb-o icon-value",
+    content:
+      "We will continually seek to provide excellent service through the development of new and improved methods to reduce hunger and malnutrition.",
+    icon: <Lightbulb />,
+    footer: "",
   },
   {
     title: "Professionalism",
-    text: "We will maintain the highest standards and demonstrate collegiality and respect in all actions.",
-    icon: "fa fa-solid fa-medal icon-value",
+    desc: "Our work ethic speaks volumes.",
+    content:
+      "We will maintain the highest standards and demonstrate collegiality and respect in all actions.",
+    icon: <Medal />,
+    footer: "",
   },
   {
     title: "Respect",
-    text: "We will treat all of our relationships with respect.",
-    icon: "fa fa-smile-o icon-value",
+    desc: "We regard everyone highly",
+    content: "We will treat all of our relationships with respect.",
+    icon: <Smile />,
+    footer: "",
   },
 ];
 const Values = () => {
@@ -99,7 +85,7 @@ const Values = () => {
         Our Values
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {cardData.map((card, i) => (
+        {values.map((card, i) => (
           <motion.div
             key={i}
             custom={i}
@@ -108,17 +94,16 @@ const Values = () => {
             viewport={{ once: true, amount: 0.2 }}
             variants={cardVariants}
           >
-            <Card className="hover:shadow-xl transition-shadow duration-300">
+            <Card className="hover:shadow-xl transition-shadow duration-300 h-50 bg-gradient-to-br from-green-500 via-teal-400 to-blue-500 text-white">
               <CardHeader>
                 <CardTitle>{card.title}</CardTitle>
-                <CardDescription>{card.desc}</CardDescription>
+                <CardDescription className="font-semibold">
+                  {card.desc}
+                </CardDescription>
               </CardHeader>
               <CardContent>
                 <p>{card.content}</p>
               </CardContent>
-              <CardFooter>
-                <p className="text-green-600 font-semibold">{card.footer}</p>
-              </CardFooter>
             </Card>
           </motion.div>
         ))}

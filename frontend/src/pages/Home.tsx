@@ -1,31 +1,34 @@
-// import Skeleton from "react-loading-skeleton";
-// import "react-loading-skeleton/dist/skeleton.css";
-// import { SkeletonTheme } from "react-loading-skeleton";
+import { lazy, Suspense } from "react";
 
-import Footer from "@/components/Footer";
-import Hero from "@/components/Hero";
-import Journey from "@/components/Journey";
-import Links from "@/components/Links";
-import MissionVision from "@/components/MissionVision";
+const Hero = lazy(() => import("@/components/Hero"));
+const Projects = lazy(() => import("@/components/Projects"));
+const Team = lazy(() => import("@/components/Team"));
+const Quotes = lazy(() => import("@/components/Quotes"));
+const Journey = lazy(() => import("@/components/Journey"));
+
 import Navbar from "@/components/Navbar";
-import Projects from "@/components/Projects";
-import Quotes from "@/components/Quotes";
+import MissionVision from "@/components/MissionVision";
 import Values from "@/components/Values";
+import Links from "@/components/Links";
+import Footer from "@/components/Footer";
+
+import ErrorPage from "@/components/ErrorPage";
 
 const Home = () => {
   // #10172a
   return (
-    <>
+    <Suspense fallback={<ErrorPage />}>
       <Navbar />
       <Hero />
       <MissionVision />
       <Values />
       <Journey />
       <Projects />
+      <Team />
       <Links />
       <Quotes />
       <Footer />
-    </>
+    </Suspense>
   );
 };
 

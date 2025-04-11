@@ -10,7 +10,7 @@ const ErrorPage = () => {
         We couldn't process your request. Try again or return home.
       </p>
       <img
-        src="https://source.unsplash.com/400x300/?error"
+        src="https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg?ga=GA1.1.1216656388.1736710841&semt=ais_hybrid&w=740"
         alt="Error illustration"
         className="rounded-lg shadow-md mb-4"
       />

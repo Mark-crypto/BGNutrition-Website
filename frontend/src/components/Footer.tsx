@@ -15,7 +15,7 @@ const Footer = () => {
           </div>
           <div className="flex items-center gap-2">
             <Mail />
-            <span>info@company.com</span>
+            <span>acatieno@yahoo.com</span>
           </div>
         </div>
 
@@ -24,7 +24,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold">Follow Us</h3>
           <div className="flex gap-4">
             <a
-              href="https://github.com"
+              href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -92,7 +92,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center mt-8 text-sm text-gray-400">
-        <p>&copy; 2025 Company Name. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} BG Nutrition. All Rights Reserved.
+        </p>
       </div>
     </footer>
   );

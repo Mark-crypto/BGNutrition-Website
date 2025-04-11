@@ -17,7 +17,7 @@ const ImageRevealCard: React.FC<ImageRevealCardProps> = ({
   return (
     <motion.div
       layout
-      className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden w-[300px] max-w-full"
+      className="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden w-[300px] max-w-full "
       initial={{ borderRadius: 16 }}
     >
       <motion.div layout>

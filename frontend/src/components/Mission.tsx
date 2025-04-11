@@ -28,10 +28,8 @@ const Mission = () => {
         <p className="text-gray-700 dark:text-gray-300">
           We are committed to eliminating hunger, malnutrition, and food
           insecurity by actively engaging the community and those we serve in
-          developing solutions. Through strong internal and external
-          collaborations and partnerships, we deliver innovative, research-based
-          interventions and programs that promote healthier meal patterns and
-          food choices.
+          developing solutions. we deliver innovative, research-based
+          interventions and programs that promote healthier meal patterns.
         </p>
       </motion.div>
     </>
