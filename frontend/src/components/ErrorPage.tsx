@@ -12,7 +12,7 @@ const ErrorPage = () => {
       <img
         src="https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg?ga=GA1.1.1216656388.1736710841&semt=ais_hybrid&w=740"
         alt="Error illustration"
-        className="rounded-lg shadow-md mb-4"
+        className="rounded-lg shadow-md mb-4 h-[300px] w-[300px]"
       />
       <div>
         <button

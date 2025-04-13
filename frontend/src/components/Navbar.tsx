@@ -1,8 +1,11 @@
+import { useTheme } from "../context/ThemeContext";
+
 const Navbar = () => {
   const sections = ["home", "journey", "projects", "links", "quotes", "footer"];
+  // const {toggleTheme, theme} = useTheme();
   return (
     <>
-      <div className="flex justify-center items-center bg-gradient-to-br from-green-500 to-emerald-600  dark:bg-gray-900 sticky top-3 z-10">
+      <div className="flex justify-center items-center   dark:bg-gray-900 sticky top-3 z-10">
         <ul
           className="flex justify-center items-center gap-4 text-lg font-semibold
         dark:text-gray-200 bg-gradient-to-br from-green-500 to-emerald-600 text-white w-[600px]

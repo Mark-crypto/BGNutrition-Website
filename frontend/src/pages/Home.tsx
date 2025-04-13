@@ -11,13 +11,12 @@ import MissionVision from "@/components/MissionVision";
 import Values from "@/components/Values";
 import Links from "@/components/Links";
 import Footer from "@/components/Footer";
-
-import ErrorPage from "@/components/ErrorPage";
+import Loading from "@/components/Loading";
 
 const Home = () => {
   // #10172a
   return (
-    <Suspense fallback={<ErrorPage />}>
+    <Suspense fallback={<Loading />}>
       <Navbar />
       <Hero />
       <MissionVision />
